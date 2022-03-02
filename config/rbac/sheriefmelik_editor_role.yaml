@@ -1,0 +1,24 @@
+# permissions for end users to edit sheriefmeliks.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sheriefmelik-editor-role
+rules:
+- apiGroups:
+  - core.sherief.com
+  resources:
+  - sheriefmeliks
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - core.sherief.com
+  resources:
+  - sheriefmeliks/status
+  verbs:
+  - get

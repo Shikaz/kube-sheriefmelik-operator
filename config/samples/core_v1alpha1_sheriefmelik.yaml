@@ -1,0 +1,6 @@
+apiVersion: core.sherief.com/v1alpha1
+kind: SheriefMelik
+metadata:
+  name: sheriefmelik-sample
+spec:
+  # TODO(user): Add fields here

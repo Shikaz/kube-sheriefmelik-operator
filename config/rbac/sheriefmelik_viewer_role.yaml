@@ -1,0 +1,20 @@
+# permissions for end users to view sheriefmeliks.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sheriefmelik-viewer-role
+rules:
+- apiGroups:
+  - core.sherief.com
+  resources:
+  - sheriefmeliks
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - core.sherief.com
+  resources:
+  - sheriefmeliks/status
+  verbs:
+  - get
